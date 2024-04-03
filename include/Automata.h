@@ -37,4 +37,4 @@ class Automata {
     void cook(int);
     void finish();
 };
-"#endif  // INCLUDE_AUTOMATA_H_
+#endif  // INCLUDE_AUTOMATA_H_
