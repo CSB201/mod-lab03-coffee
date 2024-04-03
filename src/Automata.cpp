@@ -121,5 +121,7 @@ std::string Automata::statusCheck() {
              return "CHECK";
         case STATES::COOK:
              return "COOK";
+        default:
+            return "ERROR";
     }
 }
