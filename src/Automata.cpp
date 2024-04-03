@@ -6,18 +6,20 @@
 #include<vector>
 
 Automata::Automata() {
-  menu = {
-    "Tea",
-    "Espresso",
-    "Latte",
-    "Hot chocolate"
-  };
-  price = {
-    15,
-    10,
-    25,
-    8
-  };
+    cash = 0;
+    state = STATES::OFF;
+    menu = {
+        "Tea",
+        "Espresso",
+        "Latte",
+        "Hot chocolate"
+        };
+    price = {
+        15,
+        10,
+        25,
+        8
+    };
 }
 
 void Automata::on() {
