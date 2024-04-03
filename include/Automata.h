@@ -1,10 +1,11 @@
 // Copyright 2024 CSB_lab3
 
-#ifndef AUTOMATA_H
-#define AUTOMATA_H
+#ifndef INCLUDE_AUTOMATA_H_ 
+#define INCLUDE_AUTOMATA_H_ 
 
 #include <iostream>
-#include<vector>
+#include <vector>
+#include <string>
 
 enum class STATES {
     OFF,
@@ -36,4 +37,4 @@ class Automata {
     void cook(int);
     void finish();
 };
-#endif
+"#endif  // INCLUDE_AUTOMATA_H_
