@@ -6,8 +6,6 @@
 #include<vector>
 
 Automata::Automata() {
-    cash = 0;
-    state = STATES::OFF;
     menu = {
         "Tea",
         "Espresso",
