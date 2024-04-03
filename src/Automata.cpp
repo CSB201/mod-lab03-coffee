@@ -12,12 +12,13 @@ Automata::Automata() {
     "Latte",
     "Hot chocolate"
   };
-  price= {
+  price = {
     15,
     10,
     25,
     8
   };
+}
 
 void Automata::on() {
     if (state == STATES::OFF) {
