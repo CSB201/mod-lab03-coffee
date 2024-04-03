@@ -12,7 +12,7 @@ Automata::Automata() {
     "Latte",
     "Hot chocolate"
   };
-  prices = {
+  price= {
     15,
     10,
     25,
