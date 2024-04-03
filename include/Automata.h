@@ -1,7 +1,7 @@
 // Copyright 2024 CSB_lab3
 
-#ifndef INCLUDE_AUTOMATA_H_ 
-#define INCLUDE_AUTOMATA_H_ 
+#ifndef INCLUDE_AUTOMATA_H_
+#define INCLUDE_AUTOMATA_H_
 
 #include <iostream>
 #include <vector>
