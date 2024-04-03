@@ -22,7 +22,7 @@ class Automata {
     std::vector<int> price;
     STATES state = STATES::OFF;
  public:
-    int google();
+    Automata();
     void setMenu(std::vector<std::string>);
     void setPrice(std::vector<int>);
     std::string statusCheck();
