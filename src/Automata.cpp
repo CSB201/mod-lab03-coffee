@@ -5,6 +5,20 @@
 #include<iostream>
 #include<vector>
 
+Automata::Automata() {
+  menu = {
+    "Tea",
+    "Espresso",
+    "Latte",
+    "Hot chocolate"
+  };
+  prices = {
+    15,
+    10,
+    25,
+    8
+  };
+
 void Automata::on() {
     if (state == STATES::OFF) {
         std::cout << "Activation\n";
