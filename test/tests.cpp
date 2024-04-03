@@ -30,14 +30,6 @@ TEST(test, coin) {
     EXPECT_EQ("ACCEPT", test.statusCheck());
 }
 
-TEST(test, nohMoney) {
-    Automata test;
-    test.on();
-    test.coin(5);
-    test.choice(1);
-    EXPECT_EQ(false, test.check(0));
-}
-
 TEST(test, okMoney) {
     Automata test;
     test.on();
@@ -52,6 +44,22 @@ TEST(test, cancel) {
     test.coin(200);
     test.cancel();
     EXPECT_EQ("WAIT", test.statusCheck());
+}
+
+TEST(test, noMoney) {
+    Automata test;
+    test.on();
+    test.coin(5);
+    test.choice(1);
+    EXPECT_EQ(false, test.check(0));
+}
+
+TEST(test, invalidProduct) {
+    Automata test;
+    test.on();
+    test.coin(50);
+    test.choice(8);
+    EXPECT_EQ("ACCEPT", test.statusCheck());
 }
 
 TEST(test, cook) {
@@ -71,12 +79,4 @@ TEST(test, finish) {
     test.cook(1);
     test.finish();
     EXPECT_EQ("WAIT", test.statusCheck());
-}
-
-TEST(test, invalidProduct) {
-    Automata test;
-    test.on();
-    test.coin(50);
-    test.choice(8);
-    EXPECT_EQ("ACCEPT", test.statusCheck());
 }
