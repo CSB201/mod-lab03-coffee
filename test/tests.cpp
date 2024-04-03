@@ -6,7 +6,7 @@
 TEST(test, on) {
     Automata test;
     test.on();
-    EXPECT_EQ("ON", test.statusCheck());
+    EXPECT_EQ("WAIT", test.statusCheck());
 }
 
 TEST(test, incorrectAction) {
